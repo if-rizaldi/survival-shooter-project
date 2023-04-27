@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6198ba05afeb23b48b444eb9a58b0343, type: 3}
+  m_Name: StoryModePlayerData
+  m_EditorClassIdentifier: 
+  playerInitialLife: 2
+  playerMaxHealth: 100
+  playerSpeed: 5
+  playerStrength: 5
+  buffDuration: 10
+  buffMultiplier: 0.3
+  playerLuck: 0.3
+  playerScore: 0
+  playerHighestScore: 0
+  isHasTorchLv1: 0
+  isHasTorchLv2: 0
+  isHasArmorLv1: 0
+  isHasArmorLv2: 0
+  isHasArmorLv3: 0
+  isHasShoeLv1: 0
+  isHasShoeLv2: 0
+  isHasShoeLv3: 0
+  isHasGunBoosterLv1: 0
+  isHasGunBoosterLv2: 0
+  isHasGunBoosterLv3: 0
+  isHasTimeMachineLv1: 0
+  isHasTimeMachineLv2: 0
+  isHasSupplementLv1: 0
+  isHasSupplementLv2: 0
+  isHasSpecialSupplement: 0
+  isHasMellowGun: 0
+  isHasMellowMachineGun: 0
+  isHasAmellowGun: 0
+  isHasMamellowGun: 0
+  isHasFellowGun: 0
