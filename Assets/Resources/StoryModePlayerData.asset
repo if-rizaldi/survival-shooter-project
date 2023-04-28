@@ -19,7 +19,7 @@ MonoBehaviour:
   buffDuration: 10
   buffMultiplier: 0.3
   playerLuck: 0.3
-  isAndroidControl: 1
+  isAndroidControl: 0
   isPlayerAbleToDodge: 0
   healthAmount: 0
   lifeAmount: 0

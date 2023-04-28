@@ -84,8 +84,6 @@ public class MainCharacterMovement : MonoBehaviour
 
             StartCoroutine(CheckAndroidControl());
 
-            //dodgePower = playerStats.dodgePower;
-
         }
 
     }
