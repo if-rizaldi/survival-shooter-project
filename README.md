@@ -21,3 +21,8 @@ The game has been built for Windows and Android platforms using URP and the New 
 - UI design and flow are basic
 - Some menus are only for samples (score menu, setting menu)
 - No music
+
+# note :
+- android UI after build is too small and pause button is unresponsive
+- sometime Enemy got stuck and cannot find the player position
+- dodge feature in android is not consistence
