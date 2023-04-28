@@ -26,6 +26,7 @@ The game has been built for Windows and Android platforms using URP and the New 
 - android UI after build is too small and pause button is unresponsive
 - sometime Enemy got stuck and cannot find the player position
 - dodge feature in android is not consistence
+- webGL build have some error in accessing Score Menu and Setting Menu
 
 
 # try my game :
