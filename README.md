@@ -26,3 +26,8 @@ The game has been built for Windows and Android platforms using URP and the New 
 - android UI after build is too small and pause button is unresponsive
 - sometime Enemy got stuck and cannot find the player position
 - dodge feature in android is not consistence
+
+
+# try my game :
+You can try the game in here:
+https://if-rizaldi.itch.io/survival-shooter-pre-alpha
