@@ -19,26 +19,18 @@ MonoBehaviour:
   buffDuration: 10
   buffMultiplier: 0.3
   playerLuck: 0.3
+  isAndroidControl: 1
+  isPlayerAbleToDodge: 0
+  healthAmount: 0
+  lifeAmount: 0
+  speedAmount: 0
+  strengthAmount: 0
+  armorAmount: 0
+  currentWeapon: {fileID: 0}
+  playerLastPosition: {x: 0, y: 0, z: 0}
+  SurvivalModeEnemyCount: 0
+  lifeBuff: 0
+  playerLastScore: 0
   playerScore: 0
   playerHighestScore: 0
-  isHasTorchLv1: 0
-  isHasTorchLv2: 0
-  isHasArmorLv1: 0
-  isHasArmorLv2: 0
-  isHasArmorLv3: 0
-  isHasShoeLv1: 0
-  isHasShoeLv2: 0
-  isHasShoeLv3: 0
-  isHasGunBoosterLv1: 0
-  isHasGunBoosterLv2: 0
-  isHasGunBoosterLv3: 0
-  isHasTimeMachineLv1: 0
-  isHasTimeMachineLv2: 0
-  isHasSupplementLv1: 0
-  isHasSupplementLv2: 0
-  isHasSpecialSupplement: 0
-  isHasMellowGun: 0
-  isHasMellowMachineGun: 0
-  isHasAmellowGun: 0
-  isHasMamellowGun: 0
-  isHasFellowGun: 0
+  playerScoreList: 

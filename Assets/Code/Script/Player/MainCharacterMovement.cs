@@ -218,11 +218,21 @@ public class MainCharacterMovement : MonoBehaviour
         //setup arah dodge dan apakah dodge dapat menembus obstacle atau tidak. Jika obstacle terlalu panjang maka tidak akan ditembus
         if (!isInitalDodgeDirectionSet)
         {
+            float x;
+            float z;
             //untuk kontrol PC
-            float x = transform.localPosition.x + Input.GetAxis("Horizontal") * dodgePower;
-            float z = transform.localPosition.z + Input.GetAxis("Vertical") * dodgePower;
+            if (!isAndroid)
+            {
+                x = transform.localPosition.x + Input.GetAxis("Horizontal") * dodgePower;
+                z = transform.localPosition.z + Input.GetAxis("Vertical") * dodgePower;
 
-            //untuk kontrol android perlu dibuat
+            }
+            else
+            {
+                x = transform.localPosition.x + movementJoystick.Horizontal * dodgePower;
+                z = transform.localPosition.z + movementJoystick.Vertical * dodgePower;
+
+            }
 
             dodgeDirection = new Vector3(x, transform.localPosition.y, z);
             isInitalDodgeDirectionSet = true;
@@ -282,29 +292,6 @@ public class MainCharacterMovement : MonoBehaviour
     {
         if (!isAndroid)
         {
-            /*
-            Vector3 lookPos = new Vector3();
-
-
-            lookPos.x += this.transform.position.x + Input.mousePosition.x;
-            lookPos.z += this.transform.position.z + Input.mousePosition.y;
-           
-
-       
-            Quaternion targetRotation = Quaternion.LookRotation((lookPos - transform.position).normalized, Vector3.up);
-
-            //float currentRotationX = transform.rotation.eulerAngles.x;
-            //float currentRotationZ = transform.rotation.eulerAngles.z;
-            currentRotation = Quaternion.Euler(transform.rotation.eulerAngles.x, targetRotation.eulerAngles.y, transform.rotation.eulerAngles.z);
-            currentRotation = Quaternion.Slerp(currentRotation, targetRotation, routationSensitivity * Time.fixedDeltaTime);
-            currentRotation.z = 0;
-            currentRotation.x = 0;
-
-            //transform.rotation = Quaternion.Euler(new Vector3(currentRotationX, targetRotation.eulerAngles.y, currentRotationZ));
-            //currentRotation = transform.rotation;
-            transform.rotation = currentRotation;
-
-             */
             // raycast dari posisi mouse ke "MousePlane"
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Plane plane = new Plane(Vector3.up, transform.position);
@@ -336,17 +323,7 @@ public class MainCharacterMovement : MonoBehaviour
                 transform.rotation = currentRotation;
             }
             else
-            {
-                Vector3 moveDirection = new Vector3(movementJoystick.Horizontal, 0f, movementJoystick.Vertical);
-                if (moveDirection != Vector3.zero)
-                {
-                    Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
-                    currentRotation = Quaternion.Slerp(currentRotation, targetRotation, routationSensitivity * Time.fixedDeltaTime);
                     transform.rotation = currentRotation;
-                }
-                else
-                    transform.rotation = currentRotation;
-            }
 
 
             Debug.DrawRay(lookPos, Vector3.up, Color.red);

@@ -66,16 +66,6 @@ public class SceneController : MonoBehaviour
         pauseMenu.SetActive(false);
         Application.targetFrameRate = 60;
 
-        if(SystemInfo.deviceType == DeviceType.Handheld)
-        {
-            playerData.isAndroidControl = true;
-        }
-        else
-        {
-            playerData.isAndroidControl = false;
-        }
-
-
         playerActionAsset = new ThirdPersonInputActionsAsset();
         player = GameObject.FindGameObjectWithTag("Player");
         playerStats = player.GetComponent<PlayerStats>();
